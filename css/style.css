@@ -1,0 +1,11 @@
+#boton1:hover{
+    background-color: rgb(114, 13, 161);
+}
+
+#button-edit:hover{
+    background-color: rgb(13, 126, 161);
+}
+
+#button-erase:hover{
+    background-color: rgb(161, 13, 13);
+}

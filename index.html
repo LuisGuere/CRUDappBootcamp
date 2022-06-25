@@ -10,7 +10,7 @@
     <!--CDN Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
+<body id="body">
     <!--Sección del Header-->
     <header class="container-flex">
         <nav class="navbar sticky-top bg-dark">
@@ -20,17 +20,17 @@
           </nav>
     </header>
     <!--Contenedor de la aplicación CRUD-->
-    <main class="container py-2">    
+    <main class="container py-5">    
         <section class="row">             
             <article class="col align-items-center">
-                <h1 class="display-1 text-center">CRUD</h1>
-                <form class="py-3" action="submit">
+                <h1 class="display-1 text-center"><b>CRUD</b></h1>
+                <form id="contact-form" class="py-3" action="submit">
                     <div class="row py-1 align-items-center">
                         <div class="col-3 col-md-2">
                             <label for="">Nombre:</label>                        
                         </div>
                         <div class="col-9 col-md-8">
-                            <input class="form-control form-control-md border border-dark" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                            <input id="names" class="form-control form-control-md border border-dark" type="text" placeholder=".Nombre" aria-label=".form-control-lg example">
                         </div>
                     </div>
                     <div class="row py-1 align-items-center">
@@ -38,7 +38,7 @@
                             <label for="">E-mail:</label>
                         </div>
                         <div class="col-9 col-md-8">
-                            <input class="form-control form-control-md border border-dark" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                            <input id="mail" class="form-control form-control-md border border-dark" type="text" placeholder="tucorreo@mail.com" aria-label=".form-control-lg example">
                         </div>
                     </div>
                     <div class="row py-1 align-items-center">
@@ -46,23 +46,39 @@
                             <label for="">Telefono:</label>
                         </div>
                         <div class="col-9 col-md-8">
-                            <input class="form-control form-control-md border border-dark" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                            <input id="telephone" class="form-control form-control-md border border-dark" type="number" placeholder="+## ### ### ###" aria-label=".form-control-lg example">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <button id="boton1" type="submit" class="btn btn-dark mb-3">Registrar</button>
                         </div>
                     </div>
                 </form>
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <button type="submit" class="btn btn-dark mb-3">Registrar</button>
-                    </div>
-                </div>
             </article>
+        </section>
+        <section id="tablaRegistro" class="row">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Propiedades</th>
+                  </tr>
+                </thead>
+                <tbody id="add-users">
+
+                </tbody>
+              </table>
         </section>
     </main>
     <!--Sección del Footer-->
     <footer>
         <nav class="container-fluid bg-dark py-3">
             <section class="row">
-                <article class="col-sm-3 text-light">
+                <article class="col-sm-4 text-light py-2">
                     <h1 class="h5">Comunidad</h1>
                     <ul class="list-group">
                         <li class="list-group-item border border-secondary bg-dark">
@@ -79,7 +95,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="col-sm-3 text-light">
+                <article class="col-sm-4 text-light py-2">
                     <h1 class="h5">Nosotros</h1>
                     <ul class="list-group">
                         <li class="list-group-item border border-secondary bg-dark">
@@ -96,7 +112,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="col-sm-3 text-light">
+                <article class="col-sm-4 text-light py-2">
                     <h1 class="h5">Recomendado</h1>
                     <ul class="list-group">
                         <li class="list-group-item border border-secondary bg-dark">
@@ -112,12 +128,6 @@
                             <a href="#">Viniles</a>
                         </li>
                     </ul>
-                </article>
-                <article class="col-sm-3 text-light">
-                    <h1 class="h5">Tartaros Abyss</h1>
-                    <picture class="border border-secondary bg-dark">
-                        <img src="" alt="" srcset="">
-                    </picture>
                 </article>
             </section>
         </nav>
