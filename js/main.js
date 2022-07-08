@@ -1,3 +1,4 @@
+
 const contactForm = document.getElementById('contact-form');
 const names = document.getElementById('names');
 const mail = document.getElementById('mail');
@@ -5,7 +6,7 @@ const telephone = document.getElementById('telephone');
 const addUsers = document.getElementById('add-users');
 
 /*
-const contactoForm = document.getElementById('contacto-form');
+//const contactoForm = document.getElementById('contacto-form');
 const inputNombre = document.getElementById('inputNombre');
 const inputApellido = document.getElementById('inputApellido');
 const inputTelefono = document.getElementById('inputTelefono');
