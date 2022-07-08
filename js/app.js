@@ -26,23 +26,18 @@ const muestraRegistros = () => {
 
     agregarTabla.innerHTML = "";
     registrosLocales.forEach((registroLocal) => {
-      const fila = `<tr>
+      const fila = `<tr">
       <td>1</td>
       <td>${registroLocal.nombre}</td>
       <td>${registroLocal.correo}</td>
       <td>${registroLocal.telefono}</td>
-      <td class="row">      
-        <div class="col">
-
-        </div>
-        <div class="col">
-        
-        </div>
-
+      <td class="row">
+      <div class="col-sm-4">
       <button type="button" class="btn btn-warning" onclick="iniciarEditarRegistro('${registroLocal.id}')">Editar</button>
-      </td>
-      <td>
+      </div>            
+      <div class="col-sm-4">
       <button type="button" class="btn btn-danger" onclick="eliminarRegistro('${registroLocal.id}')">Eliminar</button>
+      </div>
 
       </td>
       </tr>`;
