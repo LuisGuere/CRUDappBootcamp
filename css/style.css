@@ -1,11 +1,15 @@
 #boton1:hover{
     background-color: rgb(114, 13, 161);
 }
+#boton2:hover{
+    background-color: rgb(15, 179, 88);
+}
 
-#button-edit:hover{
+#boton3:hover{
     background-color: rgb(13, 126, 161);
 }
 
-#button-erase:hover{
+#boton4:hover{
     background-color: rgb(161, 13, 13);
 }
+

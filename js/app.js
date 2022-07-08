@@ -33,10 +33,10 @@ const muestraRegistros = () => {
       <td>${registroLocal.telefono}</td>
       <td class="row">
       <div class="col-sm-4">
-      <button type="button" class="btn btn-warning" onclick="iniciarEditarRegistro('${registroLocal.id}')">Editar</button>
+      <button type="button" id="boton3" class="btn btn-dark" onclick="iniciarEditarRegistro('${registroLocal.id}')">Editar</button>
       </div>            
       <div class="col-sm-4">
-      <button type="button" class="btn btn-danger" onclick="eliminarRegistro('${registroLocal.id}')">Eliminar</button>
+      <button type="button" id="boton4" class="btn btn-dark" onclick="eliminarRegistro('${registroLocal.id}')">Eliminar</button>
       </div>
 
       </td>
